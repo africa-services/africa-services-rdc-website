@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Africa Services RDC</title>
+  <meta name="description" content="Contactez Africa Services RDC : adresse, téléphone, e-mail, formulaire de contact, localisation et réseaux sociaux.">
+  <meta name="theme-color" content="#3b261b">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400..800;1,400..800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <div id="header-slot"></div>
+  <main id="main">
+    <section class="page-hero" style="min-height:clamp(320px,44vh,440px)">
+      <img class="page-hero__img" src="assets/img/landscape-bukavu.jpg" alt="" aria-hidden="true">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a><span aria-hidden="true">/</span><span>Contact</span></nav>
+        <span class="eyebrow">Contact Us</span>
+        <h1><span class="mark">Parlons ensemble</span></h1>
+        <p>Une question, un partenariat, une demande de presse ? Notre équipe vous répond sous 48 heures ouvrées.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-layout">
+        <div class="reveal">
+          <span class="eyebrow">Nos coordonnées</span>
+          <h2>Restons en contact</h2>
+          <div class="contact-cards">
+            <div class="contact-card"><span class="ic"><i data-lucide="map-pin"></i></span><div><small>Adresse</small><strong>Avenue de la Paix, Goma<br>Nord-Kivu, RD Congo</strong></div></div>
+            <a class="contact-card" href="tel:+243900000000"><span class="ic"><i data-lucide="phone"></i></span><div><small>Téléphone</small><strong>+243 900 000 000</strong></div></a>
+            <a class="contact-card" href="mailto:contact@africaservicesrdc.org"><span class="ic"><i data-lucide="mail"></i></span><div><small>Adresse électronique</small><strong>contact@africaservicesrdc.org</strong></div></a>
+            <div class="contact-card"><span class="ic"><i data-lucide="clock"></i></span><div><small>Horaires</small><strong>Lun – Ven · 8h00 – 17h00</strong></div></div>
+          </div>
+          <h3 style="font-size:1.1rem">Suivez-nous</h3>
+          <div class="socials" style="color:var(--ink)">
+            <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+            <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="form-card reveal reveal-d1">
+          <h3 style="font-size:1.6rem">Envoyez-nous un message</h3>
+          <p style="color:var(--muted)">Les champs marqués * sont obligatoires.</p>
+          <!-- Pour recevoir les messages : ajoutez data-endpoint="https://formspree.io/f/VOTRE_ID" -->
+          <form class="form" data-validate novalidate>
+            <div class="form-row">
+              <div class="field"><label for="c-name">Nom complet *</label><input id="c-name" name="name" autocomplete="name" required><span class="error">Merci d'indiquer votre nom.</span></div>
+              <div class="field"><label for="c-email">E-mail *</label><input id="c-email" name="email" type="email" autocomplete="email" required><span class="error">Adresse e-mail invalide.</span></div>
+            </div>
+            <div class="form-row">
+              <div class="field"><label for="c-phone">Téléphone</label><input id="c-phone" name="phone" type="tel" autocomplete="tel"></div>
+              <div class="field"><label for="c-subject">Objet *</label>
+                <select id="c-subject" name="subject" required>
+                  <option value="">Choisir…</option>
+                  <option>Information générale</option>
+                  <option>Partenariat</option>
+                  <option>Bénévolat</option>
+                  <option>Don / reçu fiscal</option>
+                  <option>Presse & médias</option>
+                </select><span class="error">Merci de choisir un objet.</span></div>
+            </div>
+            <div class="field"><label for="c-msg">Message *</label><textarea id="c-msg" name="message" required></textarea><span class="error">Merci d'écrire votre message.</span></div>
+            <label class="consent"><input type="checkbox" required> J'accepte que mes données soient utilisées pour répondre à ma demande.</label>
+            <button class="btn btn--primary" type="submit">Envoyer le message <i data-lucide="send"></i></button>
+            <p class="form-success" role="status">Merci ! Votre message a bien été envoyé. Nous vous répondrons rapidement.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--cream">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">Localisation</span><h2>Nous trouver</h2></div><p>Bureau de coordination de l'Est, à Goma.</p></div>
+        <iframe class="map-frame reveal" title="Carte : bureau d'Africa Services RDC à Goma" loading="lazy"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=29.18%2C-1.70%2C29.27%2C-1.65&amp;layer=mapnik&amp;marker=-1.6792%2C29.2228"></iframe>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container" style="max-width:860px">
+        <div class="section-head"><div><span class="eyebrow">Questions fréquentes</span><h2>FAQ</h2></div></div>
+        <div class="faq">
+          <details><summary>Comment puis-je faire un don ?</summary><p>Rendez-vous sur la page « Faire un don » : vous pouvez donner une fois ou chaque mois, par Mobile Money, carte bancaire ou virement.</p></details>
+          <details><summary>Puis-je choisir le projet que je soutiens ?</summary><p>Oui. Indiquez le domaine ou le projet dans votre don ou écrivez-nous ; nous affecterons votre contribution en conséquence.</p></details>
+          <details><summary>Comment devenir partenaire ?</summary><p>Églises, entreprises et fondations peuvent nous écrire en choisissant l'objet « Partenariat ». Nous vous présenterons nos projets et nos modalités de suivi.</p></details>
+          <details><summary>Recevez-vous des bénévoles internationaux ?</summary><p>Oui, pour des missions ciblées (formation, santé mentale, gestion de projet). Consultez la page « S'impliquer ».</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="footer-slot"></div>
+</body>
+</html>

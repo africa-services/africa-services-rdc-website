@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nos projets — Africa Services RDC</title>
+  <meta name="description" content="Projets en cours, achevés et planifiés d'Africa Services RDC, bénéficiaires et zones d'intervention en RD Congo.">
+  <meta name="theme-color" content="#3b261b">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400..800;1,400..800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/map.js" defer></script>
+</head>
+<body>
+  <div id="header-slot"></div>
+  <main id="main">
+    <section class="page-hero">
+      <img class="page-hero__img" src="assets/img/landscape-kivu.jpg" alt="" aria-hidden="true">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a><span aria-hidden="true">/</span><span>Nos projets</span></nav>
+        <span class="eyebrow">Our Projects</span>
+        <h1><span class="mark">Nos projets</span><br><span class="mark">sur le terrain</span></h1>
+        <p>Des réponses concrètes, suivies et évaluées, dans les provinces les plus touchées de la RD Congo.</p>
+      </div>
+    </section>
+
+    <!-- Chiffres -->
+    <section class="section section--brown section--tight">
+      <div class="container">
+        <div class="stats">
+          <div class="reveal"><div class="stat__num" data-count="48000" data-suffix="+">48 000+</div><div class="stat__label">Bénéficiaires directs</div></div>
+          <div class="reveal reveal-d1"><div class="stat__num" data-count="6">6</div><div class="stat__label">Provinces couvertes</div></div>
+          <div class="reveal reveal-d2"><div class="stat__num" data-count="12">12</div><div class="stat__label">Projets en cours</div></div>
+          <div class="reveal reveal-d3"><div class="stat__num" data-count="58" data-suffix=" %">58 %</div><div class="stat__label">Femmes et filles</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Liste projets -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="eyebrow">Portefeuille</span><h2>Tous nos projets</h2></div>
+          <p>Filtrez par statut pour découvrir les projets en cours, achevés ou planifiés.</p>
+        </div>
+        <div class="filters" data-filters="projects" role="group" aria-label="Filtrer les projets">
+          <button class="filter is-active" data-cat="all" aria-pressed="true">Tous <span class="count"></span></button>
+          <button class="filter" data-cat="ongoing" aria-pressed="false">En cours <span class="count"></span></button>
+          <button class="filter" data-cat="done" aria-pressed="false">Achevés <span class="count"></span></button>
+          <button class="filter" data-cat="planned" aria-pressed="false">Planifiés <span class="count"></span></button>
+        </div>
+
+        <div class="cards-3" data-filter-group="projects">
+          <article class="card" data-filter-item data-cat="ongoing">
+            <div class="card__media"><img src="assets/img/relief-camp.jpg" alt="Camp de déplacés en périphérie de Goma" loading="lazy"><span class="card__tag">Aide d'urgence</span><span class="card__status">En cours</span></div>
+            <div class="card__body">
+              <div class="card__meta"><span><i data-lucide="map-pin"></i>Goma, Nord-Kivu</span><span><i data-lucide="calendar"></i>2026</span></div>
+              <h3>Kits essentiels pour les familles déplacées</h3>
+              <p>Abris, vivres, kits d'hygiène et articles ménagers pour 2 500 ménages dans les sites de déplacement.</p>
+              <div class="progress"><div class="progress__bar" data-value="72"><i></i></div><div class="progress__info"><span>Collecté <strong>36 000 $</strong></span><span>Objectif 50 000 $</span></div></div>
+              <div class="card__foot"><span class="card__meta" style="margin:0"><span><i data-lucide="users"></i>12 500 pers.</span></span><a href="faire-un-don.html" class="btn btn--primary btn--sm">Soutenir</a></div>
+            </div>
+          </article>
+          <article class="card" data-filter-item data-cat="ongoing">
+            <div class="card__media"><img src="assets/img/mhpss-care.jpg" alt="Accompagnantes psychosociales" loading="lazy"><span class="card__tag">Santé mentale</span><span class="card__status">En cours</span></div>
+            <div class="card__body">
+              <div class="card__meta"><span><i data-lucide="map-pin"></i>Bukavu, Sud-Kivu</span><span><i data-lucide="calendar"></i>2025–2027</span></div>
+              <h3>Cercles de guérison pour survivantes</h3>
+              <p>Groupes de parole, counseling et accompagnement psycho-spirituel pour les femmes affectées par les violences.</p>
+              <div class="progress"><div class="progress__bar" data-value="48"><i></i></div><div class="progress__info"><span>Collecté <strong>14 400 $</strong></span><span>Objectif 30 000 $</span></div></div>
+              <div class="card__foot"><span class="card__meta" style="margin:0"><span><i data-lucide="users"></i>900 pers.</span></span><a href="faire-un-don.html" class="btn btn--primary btn--sm">Soutenir</a></div>
+            </div>
+          </article>
+          <article class="card" data-filter-item data-cat="ongoing">
+            <div class="card__media"><img src="assets/img/socio-oranges.jpg" alt="Commerçantes vendant des oranges" loading="lazy"><span class="card__tag">Socio-économique</span><span class="card__status">En cours</span></div>
+            <div class="card__body">
+              <div class="card__meta"><span><i data-lucide="map-pin"></i>Uvira, Sud-Kivu</span><span><i data-lucide="calendar"></i>2026–2027</span></div>
+              <h3>Mamans entrepreneures : épargne et petits commerces</h3>
+              <p>Groupes d'épargne, formation en gestion et kits de démarrage pour 300 femmes chefs de ménage.</p>
+              <div class="progress"><div class="progress__bar" data-value="35"><i></i></div><div class="progress__info"><span>Collecté <strong>10 500 $</strong></span><span>Objectif 30 000 $</span></div></div>
+              <div class="card__foot"><span class="card__meta" style="margin:0"><span><i data-lucide="users"></i>300 femmes</span></span><a href="faire-un-don.html" class="btn btn--primary btn--sm">Soutenir</a></div>
+            </div>
+          </article>
+          <article class="card" data-filter-item data-cat="done">
+            <div class="card__media"><img src="assets/img/education-classroom.jpg" alt="Un écolier au tableau" loading="lazy"><span class="card__tag">Éducation</span><span class="card__status card__status--done">Achevé</span></div>
+            <div class="card__body">
+              <div class="card__meta"><span><i data-lucide="map-pin"></i>Beni, Nord-Kivu</span><span><i data-lucide="calendar"></i>2024–2025</span></div>
+              <h3>Retour à l'école pour 800 enfants déplacés</h3>
+              <p>Frais scolaires, fournitures et classes de rattrapage ; 92 % des enfants ont terminé l'année scolaire.</p>
+              <div class="progress"><div class="progress__bar progress__bar--done" data-value="100"><i></i></div><div class="progress__info"><span>Collecté <strong>24 000 $</strong></span><span>Objectif atteint</span></div></div>
+              <div class="card__foot"><span class="card__meta" style="margin:0"><span><i data-lucide="users"></i>800 enfants</span></span><a href="publications.html" class="btn btn--outline btn--sm">Rapport</a></div>
+            </div>
+          </article>
+          <article class="card" data-filter-item data-cat="done">
+            <div class="card__media"><img src="assets/img/relief-distribution.jpg" alt="Distribution de vivres" loading="lazy"><span class="card__tag">Aide d'urgence</span><span class="card__status card__status--done">Achevé</span></div>
+            <div class="card__body">
+              <div class="card__meta"><span><i data-lucide="map-pin"></i>Minova, Sud-Kivu</span><span><i data-lucide="calendar"></i>2025</span></div>
+              <h3>Réponse alimentaire d'urgence</h3>
+              <p>Vivres pour 1 200 ménages déplacés pendant trois mois, en partenariat avec les églises locales.</p>
+              <div class="progress"><div class="progress__bar progress__bar--done" data-value="100"><i></i></div><div class="progress__info"><span>Collecté <strong>65 000 $</strong></span><span>Objectif atteint</span></div></div>
+              <div class="card__foot"><span class="card__meta" style="margin:0"><span><i data-lucide="users"></i>7 200 pers.</span></span><a href="publications.html" class="btn btn--outline btn--sm">Rapport</a></div>
+            </div>
+          </article>
+          <article class="card" data-filter-item data-cat="done">
+            <div class="card__media"><img src="assets/img/leadership-women.jpg" alt="Femmes leaders en formation" loading="lazy"><span class="card__tag">Leadership</span><span class="card__status card__status--done">Achevé</span></div>
+            <div class="card__body">
+              <div class="card__meta"><span><i data-lucide="map-pin"></i>Bukavu, Sud-Kivu</span><span><i data-lucide="calendar"></i>2025</span></div>
+              <h3>École de leadership serviteur — promotion 2025</h3>
+              <p>Neuf mois de formation et de mentorat pour 45 pasteurs, femmes leaders et responsables de jeunesse.</p>
+              <div class="progress"><div class="progress__bar progress__bar--done" data-value="100"><i></i></div><div class="progress__info"><span>Collecté <strong>18 000 $</strong></span><span>Objectif atteint</span></div></div>
+              <div class="card__foot"><span class="card__meta" style="margin:0"><span><i data-lucide="users"></i>45 leaders</span></span><a href="actualites.html" class="btn btn--outline btn--sm">Lire</a></div>
+            </div>
+          </article>
+          <article class="card" data-filter-item data-cat="planned">
+            <div class="card__media"><img src="assets/img/socio-tailor.jpg" alt="Formation en couture" loading="lazy"><span class="card__tag">Formation professionnelle</span><span class="card__status card__status--plan">Planifié</span></div>
+            <div class="card__body">
+              <div class="card__meta"><span><i data-lucide="map-pin"></i>Goma, Nord-Kivu</span><span><i data-lucide="calendar"></i>2027</span></div>
+              <h3>Centre de métiers pour jeunes déplacés</h3>
+              <p>Couture, menuiserie, électricité et informatique pour 200 jeunes par an, avec kit d'installation.</p>
+              <div class="progress"><div class="progress__bar" data-value="8"><i></i></div><div class="progress__info"><span>Collecté <strong>6 000 $</strong></span><span>Objectif 75 000 $</span></div></div>
+              <div class="card__foot"><span class="card__meta" style="margin:0"><span><i data-lucide="users"></i>200 jeunes/an</span></span><a href="faire-un-don.html" class="btn btn--primary btn--sm">Soutenir</a></div>
+            </div>
+          </article>
+          <article class="card" data-filter-item data-cat="planned">
+            <div class="card__media"><img src="assets/img/education-garden.jpg" alt="Élèves au potager scolaire" loading="lazy"><span class="card__tag">Éducation</span><span class="card__status card__status--plan">Planifié</span></div>
+            <div class="card__body">
+              <div class="card__meta"><span><i data-lucide="map-pin"></i>Bunia, Ituri</span><span><i data-lucide="calendar"></i>2027</span></div>
+              <h3>Écoles sûres et potagers scolaires</h3>
+              <p>Réhabilitation de trois écoles, formation des enseignants et cantines alimentées par des potagers.</p>
+              <div class="progress"><div class="progress__bar" data-value="15"><i></i></div><div class="progress__info"><span>Collecté <strong>9 000 $</strong></span><span>Objectif 60 000 $</span></div></div>
+              <div class="card__foot"><span class="card__meta" style="margin:0"><span><i data-lucide="users"></i>1 500 élèves</span></span><a href="faire-un-don.html" class="btn btn--primary btn--sm">Soutenir</a></div>
+            </div>
+          </article>
+          <article class="card" data-filter-item data-cat="planned">
+            <div class="card__media"><img src="assets/img/mhpss-elder.jpg" alt="Une femme âgée sur une route rurale" loading="lazy"><span class="card__tag">Santé mentale</span><span class="card__status card__status--plan">Planifié</span></div>
+            <div class="card__body">
+              <div class="card__meta"><span><i data-lucide="map-pin"></i>Kalemie, Tanganyika</span><span><i data-lucide="calendar"></i>2027</span></div>
+              <h3>Aidants communautaires en santé mentale</h3>
+              <p>Former 60 aidants issus des églises pour offrir une première écoute dans les villages isolés.</p>
+              <div class="progress"><div class="progress__bar" data-value="20"><i></i></div><div class="progress__info"><span>Collecté <strong>5 000 $</strong></span><span>Objectif 25 000 $</span></div></div>
+              <div class="card__foot"><span class="card__meta" style="margin:0"><span><i data-lucide="users"></i>60 aidants</span></span><a href="faire-un-don.html" class="btn btn--primary btn--sm">Soutenir</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Zones -->
+    <section class="section section--cream" id="zones">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="eyebrow">Bénéficiaires & zones d'intervention</span><h2>Où nous intervenons en RDC</h2></div>
+          <p>Cliquez sur une zone pour la localiser sur la carte.</p>
+        </div>
+        <div class="map-wrap">
+          <div id="zones-map" role="region" aria-label="Carte des zones d'intervention"></div>
+          <div class="zone-list" id="zone-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta reveal">
+          <img src="assets/img/relief-idps.jpg" alt="" aria-hidden="true" loading="lazy">
+          <div class="cta__inner">
+            <div class="on-dark"><span class="eyebrow">Get Involved</span><h2>Financez un projet</h2><p>Entreprises, églises, fondations : devenez partenaire d'un projet et suivez son impact.</p></div>
+            <div class="cta__actions"><a href="s-impliquer.html#partenaire" class="btn btn--primary">Devenir partenaire</a><a href="contact.html" class="btn btn--ghost">Nous contacter</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="footer-slot"></div>
+</body>
+</html>

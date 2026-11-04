@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Faire un don — Africa Services RDC</title>
+  <meta name="description" content="Soutenez Africa Services RDC : votre don restaure des vies et transforme des communautés en RD Congo.">
+  <meta name="theme-color" content="#3b261b">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400..800;1,400..800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <div id="header-slot"></div>
+  <main id="main">
+    <section class="hero" style="padding-bottom:clamp(56px,8vw,100px)">
+      <div class="container donate-layout">
+        <div class="reveal">
+          <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a><span aria-hidden="true">/</span><span>Faire un don</span></nav>
+          <span class="eyebrow">Donate</span>
+          <h1 style="font-size:clamp(2.4rem,5vw,4.2rem)">Votre don <span class="hero__pill" style="background-image:url('assets/img/relief-child.jpg')" aria-hidden="true"></span> <span class="accent">restaure</span> une vie</h1>
+          <p class="hero__text">Chaque contribution permet de secourir une famille déplacée, d'accompagner un survivant, de scolariser un enfant ou de lancer une activité qui fait vivre un foyer.</p>
+          <div class="impact-table">
+            <div class="impact-row"><b>10 $</b><p>Un kit d'hygiène complet pour une famille déplacée</p></div>
+            <div class="impact-row"><b>25 $</b><p>Des fournitures scolaires pour 5 enfants pendant un an</p></div>
+            <div class="impact-row"><b>100 $</b><p>Un kit de démarrage d'activité pour une mère chef de ménage</p></div>
+            <div class="impact-row"><b>500 $</b><p>Des vivres d'urgence pour 20 familles pendant deux semaines</p></div>
+          </div>
+        </div>
+
+        <div class="donate-box reveal reveal-d1" data-donate>
+          <h2 style="font-size:1.7rem;color:var(--ink)">Je fais un don</h2>
+          <div class="seg" role="group" aria-label="Fréquence du don">
+            <button type="button" class="is-active" data-freq="once" aria-pressed="true">Une fois</button>
+            <button type="button" data-freq="monthly" aria-pressed="false">Chaque mois</button>
+          </div>
+          <div class="amounts" role="group" aria-label="Montant">
+            <button type="button" class="amount" data-amount="10">10 $</button>
+            <button type="button" class="amount" data-amount="25">25 $</button>
+            <button type="button" class="amount is-active" data-amount="50">50 $</button>
+            <button type="button" class="amount" data-amount="100">100 $</button>
+            <button type="button" class="amount" data-amount="250">250 $</button>
+            <button type="button" class="amount" data-amount="500">500 $</button>
+          </div>
+          <div class="field"><label for="custom-amount">Autre montant (USD)</label><input id="custom-amount" type="number" min="1" inputmode="numeric" placeholder="Ex. 75"></div>
+          <div class="field" style="margin-top:14px"><label for="d-cause">Affecter mon don à</label>
+            <select id="d-cause">
+              <option>Là où le besoin est le plus grand</option>
+              <option>Aide d'urgence</option>
+              <option>Santé mentale et soutien psychosocial</option>
+              <option>Leadership et discipolat</option>
+              <option>Développement socio-économique</option>
+              <option>Éducation</option>
+            </select>
+          </div>
+          <div class="impact-note"><i data-lucide="sparkles"></i><span data-impact></span></div>
+          <!-- Brancher ici votre solution de paiement (Flutterwave, Stripe, PayPal, Mobile Money…) -->
+          <a href="contact.html" class="btn btn--primary btn--block" data-total>Donner 50 $</a>
+          <div class="pay-methods"><span>M-Pesa</span><span>Orange Money</span><span>Airtel Money</span><span>Visa / Mastercard</span><span>Virement</span></div>
+          <div class="secure"><i data-lucide="lock"></i>Paiement sécurisé · reçu envoyé par e-mail</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">Autres façons de donner</span><h2>Virement & Mobile Money</h2></div><p>Indiquez votre nom et « DON » en référence, puis écrivez-nous pour recevoir votre reçu.</p></div>
+        <div class="ways">
+          <div class="way reveal"><span class="ic"><i data-lucide="landmark"></i></span><h3>Virement bancaire</h3><p>Banque : [à compléter]<br>IBAN / Compte : [à compléter]<br>SWIFT : [à compléter]</p></div>
+          <div class="way reveal reveal-d1"><span class="ic"><i data-lucide="smartphone"></i></span><h3>Mobile Money</h3><p>M-Pesa, Orange Money, Airtel Money : [numéros à compléter]</p></div>
+          <div class="way reveal reveal-d2"><span class="ic"><i data-lucide="church"></i></span><h3>Collecte d'église</h3><p>Organisez une offrande spéciale ou un dimanche missionnaire pour un projet.</p></div>
+          <div class="way reveal reveal-d3"><span class="ic"><i data-lucide="building-2"></i></span><h3>Entreprises & fondations</h3><p>Mécénat, parrainage de projet ou don en nature : parlons-en.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--cream">
+      <div class="container" style="max-width:860px">
+        <div class="section-head"><div><span class="eyebrow">Transparence</span><h2>Votre confiance compte</h2></div></div>
+        <div class="faq">
+          <details open><summary>Comment mon don est-il utilisé ?</summary><p>La grande majorité des fonds va directement aux programmes sur le terrain. Nos rapports annuels détaillent l'utilisation de chaque dollar.</p></details>
+          <details><summary>Vais-je recevoir un reçu ?</summary><p>Oui, un reçu vous est envoyé par e-mail après chaque don.</p></details>
+          <details><summary>Puis-je arrêter mon don mensuel ?</summary><p>À tout moment, sur simple demande par e-mail.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="footer-slot"></div>
+</body>
+</html>

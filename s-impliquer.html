@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>S'impliquer — Africa Services RDC</title>
+  <meta name="description" content="Get Involved : donner, prier, devenir bénévole, église partenaire ou partenaire institutionnel d'Africa Services RDC.">
+  <meta name="theme-color" content="#3b261b">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400..800;1,400..800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <div id="header-slot"></div>
+  <main id="main">
+    <section class="page-hero">
+      <img class="page-hero__img" src="assets/img/leadership-community.jpg" alt="" aria-hidden="true">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a><span aria-hidden="true">/</span><span>S'impliquer</span></nav>
+        <span class="eyebrow">Get Involved</span>
+        <h1><span class="mark">Chacun peut</span><br><span class="mark mark--orange">restaurer une vie</span></h1>
+        <p>Votre temps, vos compétences, vos prières et votre générosité sont des graines d'espérance.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">Comment agir</span><h2>Six façons de vous engager</h2></div><p>Choisissez l'engagement qui vous ressemble ; nous vous accompagnons à chaque étape.</p></div>
+        <div class="cards-3">
+          <div class="way reveal"><span class="ic"><i data-lucide="heart"></i></span><h3>Faire un don</h3><p>Ponctuel ou mensuel, votre don finance directement nos programmes.</p><a href="faire-un-don.html" class="link-arrow">Donner <i data-lucide="arrow-right"></i></a></div>
+          <div class="way reveal reveal-d1" id="benevole"><span class="ic"><i data-lucide="hand-helping"></i></span><h3>Devenir bénévole</h3><p>Sur le terrain ou à distance : santé mentale, éducation, communication, logistique…</p><a href="#formulaire" class="link-arrow">Postuler <i data-lucide="arrow-right"></i></a></div>
+          <div class="way reveal reveal-d2"><span class="ic"><i data-lucide="book-open"></i></span><h3>Prier avec nous</h3><p>Recevez chaque mois nos sujets de prière et portez les communautés que nous servons.</p><a href="#formulaire" class="link-arrow">S'inscrire <i data-lucide="arrow-right"></i></a></div>
+          <div class="way reveal"><span class="ic"><i data-lucide="church"></i></span><h3>Église partenaire</h3><p>Associez votre église à un projet, organisez une collecte ou une mission.</p><a href="#formulaire" class="link-arrow">En parler <i data-lucide="arrow-right"></i></a></div>
+          <div class="way reveal reveal-d1" id="partenaire"><span class="ic"><i data-lucide="handshake"></i></span><h3>Partenaire institutionnel</h3><p>Bailleurs, ONG, entreprises : co-construisons des réponses durables.</p><a href="contact.html" class="link-arrow">Nous contacter <i data-lucide="arrow-right"></i></a></div>
+          <div class="way reveal reveal-d2"><span class="ic"><i data-lucide="megaphone"></i></span><h3>Ambassadeur</h3><p>Partagez nos histoires, organisez un événement, mobilisez votre entourage.</p><a href="#formulaire" class="link-arrow">Rejoindre <i data-lucide="arrow-right"></i></a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--brown">
+      <div class="container split">
+        <div class="split__media reveal">
+          <img src="assets/img/socio-greens.jpg" alt="Femmes au marché portant des légumes" loading="lazy">
+        </div>
+        <div class="reveal reveal-d1">
+          <span class="eyebrow">Pourquoi s'engager</span>
+          <h2 style="color:#fff">Un engagement qui porte du fruit</h2>
+          <ul class="check-list" style="color:#eedcd0">
+            <li>Un impact concret, mesuré et partagé avec vous</li>
+            <li>Une équipe locale enracinée dans les communautés</li>
+            <li>Une formation et un accompagnement pour chaque bénévole</li>
+            <li>Une communauté de foi et d'action dont vous faites partie</li>
+          </ul>
+          <a href="faire-un-don.html" class="btn btn--primary">Faire un don <i data-lucide="heart"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="formulaire" style="scroll-margin-top:100px">
+      <div class="container" style="max-width:860px">
+        <div class="form-card reveal">
+          <span class="eyebrow">Formulaire d'engagement</span>
+          <h2 style="font-size:clamp(1.8rem,3vw,2.4rem)">Je veux m'impliquer</h2>
+          <form class="form" data-validate novalidate>
+            <div class="form-row">
+              <div class="field"><label for="g-name">Nom complet *</label><input id="g-name" name="name" autocomplete="name" required><span class="error">Merci d'indiquer votre nom.</span></div>
+              <div class="field"><label for="g-email">E-mail *</label><input id="g-email" name="email" type="email" autocomplete="email" required><span class="error">Adresse e-mail invalide.</span></div>
+            </div>
+            <div class="form-row">
+              <div class="field"><label for="g-country">Pays / ville</label><input id="g-country" name="location" autocomplete="address-level2"></div>
+              <div class="field"><label for="g-type">Je souhaite… *</label>
+                <select id="g-type" name="type" required>
+                  <option value="">Choisir…</option>
+                  <option>Devenir bénévole</option>
+                  <option>Recevoir les sujets de prière</option>
+                  <option>Engager mon église</option>
+                  <option>Devenir ambassadeur</option>
+                  <option>Partenariat institutionnel</option>
+                </select><span class="error">Merci de faire un choix.</span></div>
+            </div>
+            <div class="field"><label for="g-skills">Compétences / message</label><textarea id="g-skills" name="message" placeholder="Parlez-nous de vous, de vos compétences et de vos disponibilités."></textarea></div>
+            <label class="consent"><input type="checkbox" required> J'accepte d'être recontacté(e) par Africa Services RDC.</label>
+            <button class="btn btn--primary" type="submit">Envoyer <i data-lucide="send"></i></button>
+            <p class="form-success" role="status">Merci pour votre engagement ! Nous vous recontactons très vite.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="footer-slot"></div>
+</body>
+</html>
