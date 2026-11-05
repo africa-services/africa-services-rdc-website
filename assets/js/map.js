@@ -4,9 +4,7 @@ const ZONES = [
   { name: "Nord-Kivu", city: "Goma, Beni, Rutshuru", lat: -1.6792, lng: 29.2228, people: "21 000", focus: "Urgence · SPS · Éducation" },
   { name: "Sud-Kivu", city: "Bukavu, Uvira, Minova", lat: -2.5083, lng: 28.8608, people: "15 500", focus: "SPS · Leadership · Moyens de subsistance" },
   { name: "Ituri", city: "Bunia", lat: 1.5594, lng: 30.2522, people: "4 800", focus: "Urgence · Éducation" },
-  { name: "Tanganyika", city: "Kalemie", lat: -5.9475, lng: 29.1947, people: "3 200", focus: "Santé mentale" },
   { name: "Maniema", city: "Kindu", lat: -2.9437, lng: 25.9224, people: "1 900", focus: "Développement socio-économique" },
-  { name: "Kinshasa", city: "Coordination nationale", lat: -4.3217, lng: 15.3125, people: "1 600", focus: "Leadership · Plaidoyer" },
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -23,7 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  const map = L.map(el, { scrollWheelZoom: false }).setView([-2.8, 23.6], 5);
+  const map = L.map(el, { scrollWheelZoom: false });
+  map.fitBounds(ZONES.map((z) => [z.lat, z.lng]), { padding: [60, 60], maxZoom: 7 });
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: 18,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
