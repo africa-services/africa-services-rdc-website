@@ -50,6 +50,12 @@ const logoHTML = `
   <span class="logo__text"><span class="logo__name">Africa Services</span><span class="logo__sub">RD CONGO</span></span>
 </a>`;
 
+const headerLogoHTML = `
+<a href="index.html" class="logo" aria-label="${ORG.name} — accueil">
+  ${LOGO_SVG}
+  <span class="logo__text"><span class="logo__name logo__name--acronym">${ORG.short}</span></span>
+</a>`;
+
 const currentPage = (() => {
   const p = location.pathname.split("/").pop();
   return p === "" ? "index.html" : p;
@@ -79,7 +85,7 @@ function buildHeader() {
 </div>
 <header class="site-header" id="site-header">
   <div class="container">
-    ${logoHTML}
+    ${headerLogoHTML}
     <nav class="nav" aria-label="Navigation principale">${navLinks}</nav>
     <div class="header-actions">
       <a href="s-impliquer.html" class="btn btn--outline btn--sm">Get Involved</a>

@@ -133,6 +133,7 @@ p { margin: 0 0 1em; }
 .logo__mark { width: 44px; height: 44px; flex-shrink: 0; }
 .logo__text { display: flex; flex-direction: column; line-height: 1; }
 .logo__name { font-family: var(--font-display); font-weight: 800; font-size: 1.12rem; letter-spacing: -.01em; }
+.logo__name--acronym { font-size: 1.45rem; letter-spacing: .02em; }
 .logo__sub { font-size: .66rem; font-weight: 700; letter-spacing: .22em; color: var(--orange-600); margin-top: 5px; }
 
 .nav { display: flex; align-items: center; gap: 4px; }
@@ -208,6 +209,7 @@ body.nav-open { overflow: hidden; }
 .hero__quote { border-top: 3px solid rgba(255, 255, 255, .7); padding-top: 22px; max-width: 520px; color: #eedcd0; font-size: 1.04rem; justify-self: end; }
 .hero__quote::before { content: ""; display: block; }
 .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.stats--3 { grid-template-columns: repeat(3, 1fr); }
 .stat__num { font-family: var(--font-display); font-weight: 700; font-size: clamp(2rem, 3.6vw, 2.9rem); letter-spacing: -.03em; line-height: 1; }
 .stat__label { color: #d9c6b9; margin-top: 8px; font-size: .95rem; }
 .stats-band { border-top: 1px solid rgba(255, 255, 255, .12); padding: 38px 0 46px; }
@@ -566,6 +568,7 @@ a.contact-card:hover { border-color: var(--orange); }
   .logo__mark { width: 38px; height: 38px; }
   .logo__name { font-size: 1rem; }
   .stats { grid-template-columns: repeat(2, 1fr); gap: 28px 18px; }
+  .stats--3 > :first-child { grid-column: 1 / -1; }
   .domains, .cards-3, .stories-row, .news-grid, .values, .ways, .steps, .pubs, .form-row { grid-template-columns: 1fr; }
   .news--feature { grid-column: auto; }
   .hero__badge { left: 12px; bottom: 16px; }
